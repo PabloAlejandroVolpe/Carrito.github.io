@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: #000000;
+    padding-top: 80px;
+}
+h1{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin: 30px 0px;
+}
+img {
+    width: 320px;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:15%;
+    height: 70px;
+    top: 0;
+    position: fixed;
+    width: 100%;
+}
+.scroll{
+    background-color: rgb(214, 214, 214);
+    box-shadow: .1rem .2rem .3rem rgb(214, 214, 214);
+}
+.scroll img{
+    filter: invert(15%);
+}           
+.scroll h1{
+    color: #141C29;
+}
+.carrito{
+    filter: invert(100%);
+    width: 45px;
+    height: auto;
+}
+.contenedor{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+.contenedor>div{
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    background-color: #000000;
+    border-radius: 20px;
+}
+.contenedor>div:hover{
+    background-color: #212326;
+}
+
+.informacion{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:15px;
+}
+.informacion>p:first-child{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+}
+.informacion .precio {
+    font-size: 20px;
+    font-weight: 500;
+}
+.informacion .precio span{
+    font-size: 17px;
+    font-weight: 300;
+}
+.informacion button{
+    background-color: #263143;
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+
+    font-size: 17px;
+    font-weight: 300;
+    cursor: pointer;
+}
+.informacion button:hover{
+    background-color: #2D4263;
+}
+
+/* Contenedor principal del carrito */
+.carrito-container {
+    width: 100%; /* Ancho del contenedor del carrito */
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px auto; /* Centra el contenedor horizontalmente */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Elementos del carrito */
+.carrito-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Botón de vaciar carrito */
+#vaciar-carrito {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+#vaciar-carrito:hover {
+    background-color: darkred;
+}
+
+#finalizar-compra{
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+#finalizar-compra:hover {
+    background-color: darkred;
+}
+
+
+/* Total del carrito */
+#total {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.eliminar-producto{
+    background-color: black;
+    border-radius: 10%;
+    width: 100px;
+}
+
+.aumentar-cantidad{
+    width: 40px;
+    background-color: black;
+}
+.disminuir-cantidad{
+    width: 40px;
+    background-color: black;
+}
+
+
+
+/* Estilos para el footer */
+footer {
+    padding: 10px 0; /* Espaciado arriba y abajo */
+    text-align: center; /* Centra el contenido */
+    border-top: 1px solid #ddd; /* Línea delgada arriba del footer */
+    position: relative;
+    bottom: 0;
+    width: 100%; /* Hace que el footer ocupe todo el ancho */
+}
+
+.footer-content {
+    max-width: 800px; /* Ancho máximo para el contenido del footer */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+    padding: 0 20px; /* Espaciado a los lados */
+}
+
+.footer-content p {
+    margin: 5px 0; /* Margen vertical para los párrafos */
+    font-size: 14px; /* Tamaño de fuente */
+}
+
+.footer-content a {
+    color: #0073b1; /* Color del enlace */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+}
+
+.footer-content a:hover {
+    text-decoration: underline; /* Subraya el enlace al pasar el ratón */
+}

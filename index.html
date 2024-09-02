@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <title>Paseo de compras</title>
+    <link rel="shortcut icon" href="https://github.com/Jestebansamt/Carrito-de-Compras-Html-Css-JavaScript-/blob/main/carrito-de-compras.png?raw=true" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header id="header">
+        <h1>Paseo de compras</h1> 
+    </header>
+    <!-- Contenedor para el carrito -->
+<div id="carrito-container" class="carrito-container">
+    <h2>Carrito de Compras</h2>
+    <div id="carrito-items"></div>
+    <p id="total">Total: $0</p>
+    <button id="finalizar-compra">Finalizar Compra</button>
+    <button id="vaciar-carrito">Vaciar Carrito</button>
+</div>
+    <!-- Cards -->
+    <div id="contenedor" class="contenedor"></div>
+
+    <!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <p>Copyright ©</p>
+        <p>Conéctame en <a href="https://www.linkedin.com/in/pablo-volpe-220a37209/" target="_blank">LinkedIn</a><a href="https://www.instagram.com/pablo.volpee"> Instagram</a><a href="https://wa.me/qr/33OINT44SSJFH1" target="_blank"> o Whatsapp</a>
+        <p>Reconocimiento por parte del diseño e imagenes a<a href="https://github.com/Jestebansamt" target="_blank"> Jestebansamt</a></p> 
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="productos.js"></script>
+    <script src="api.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
